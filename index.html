@@ -7,8 +7,44 @@
 
     <!-- Tailwind css CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+      integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <h1 class="bg-red-500 text-white">First Tailwind text</h1>
+    <header>
+      <nav class="grid grid-cols-3 pt-4 container mx-auto">
+        <img
+          class="w-25 h-auto"
+          src="./assets/nav-logo.png"
+          alt="Nature's Platter official logo"
+        />
+        <ul class="flex gap-4 items-center justify-center">
+          <li><a href="#">Product</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="flex gap-3 items-center justify-center">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-cart-plus"></i>
+          <button
+            class="border-2 border-[#179800] rounded-md px-4 py-1 font-medium"
+          >
+            <a href="#">Login</a>
+          </button>
+          <button
+            class="bg-[#179800] border-[#179800] text-white rounded-md px-4 py-1 font-medium"
+          >
+            <a href="#">Register</a>
+          </button>
+        </div>
+      </nav>
+    </header>
   </body>
 </html>
